@@ -8,8 +8,16 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Open+Sans"
     />
-    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
   </head>
   <body>
     <div class="site__container">
@@ -97,65 +105,261 @@
                 />
               </svg>
             </div>
-            <a href="#">MENU ITEM 1</a>
-            <a href="#">MENU 2</a>
-            <a href="#">MENU IT3</a>
-            <a href="#">MENU4</a>
-            <a href="#">MENU ITEM5</a>
-            <a href="#">MENUITEM6</a>
+            <div class="link__menu">
+              <a href="#">MENU ITEM 1</a>
+              <a href="#">MENU 2</a>
+              <a href="#">MENU IT3</a>
+              <a href="#">MENU4</a>
+              <a href="#">MENU ITEM5</a>
+              <a href="#">MENUITEM6</a>
+            </div>
           </nav>
         </header>
-        <div>
-          <div class="container">
-            <svg
-              class="background__polygon"
-              width="1440"
-              height="1024"
-              viewBox="0 0 1440 1024"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M450 1024H1440V337.188L450 1024Z"
-                fill="#F09C3E"
-                fill-opacity="0.05"
-              />
-              <path
-                d="M420 1024H1440V316.375L420 1024Z"
-                fill="#F09C3E"
-                fill-opacity="0.05"
-              />
-              <path
-                d="M480 1024H1440V358L480 1024Z"
-                fill="#F09C3E"
-                fill-opacity="0.05"
-              />
-              <path
-                d="M990 9.15527e-05L0.00012207 5.00419e-06L6.20273e-05 686.812L990 9.15527e-05Z"
-                fill="#F09C3E"
-                fill-opacity="0.07"
-              />
-              <path
-                d="M1020 9.15527e-05L0.00012207 2.3815e-06L6.02078e-05 707.625L1020 9.15527e-05Z"
-                fill="#F09C3E"
-                fill-opacity="0.07"
-              />
-              <path
-                d="M960 9.15527e-05L0.00012207 7.62687e-06L6.38467e-05 666L960 9.15527e-05Z"
-                fill="#F09C3E"
-                fill-opacity="0.07"
-              />
-            </svg>
-            <div class="blue__bar"></div>
-            <div class="home__title">
-              <h1>Heading</h1>
-              <h2>Cras ornare pulvinar molestie</h2>
-              <button>Découvrir</button>
+        <div class="container">
+          <svg
+            class="background__polygon"
+            width="1440"
+            height="1024"
+            viewBox="0 0 1440 1024"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M450 1024H1440V337.188L450 1024Z"
+              fill="#F09C3E"
+              fill-opacity="0.05"
+            />
+            <path
+              d="M420 1024H1440V316.375L420 1024Z"
+              fill="#F09C3E"
+              fill-opacity="0.05"
+            />
+            <path
+              d="M480 1024H1440V358L480 1024Z"
+              fill="#F09C3E"
+              fill-opacity="0.05"
+            />
+            <path
+              d="M990 9.15527e-05L0.00012207 5.00419e-06L6.20273e-05 686.812L990 9.15527e-05Z"
+              fill="#F09C3E"
+              fill-opacity="0.07"
+            />
+            <path
+              d="M1020 9.15527e-05L0.00012207 2.3815e-06L6.02078e-05 707.625L1020 9.15527e-05Z"
+              fill="#F09C3E"
+              fill-opacity="0.07"
+            />
+            <path
+              d="M960 9.15527e-05L0.00012207 7.62687e-06L6.38467e-05 666L960 9.15527e-05Z"
+              fill="#F09C3E"
+              fill-opacity="0.07"
+            />
+          </svg>
+          <div class="blue__bar"></div>
+          <div class="home__title">
+            <h1>Heading</h1>
+            <h2>Cras ornare pulvinar molestie</h2>
+            <button>Découvrir</button>
+          </div>
+          <div class="child__page__listing">
+            <div class="grid__container">
+              <article class="listing__gallery">
+                <a class="title__gallery" href="#">
+                  TITRE IMAGE
+                  <button class="btn__gallery">Télécharger</button>
+                </a>
+                <div class="img__gallery">
+                  <a href="#">
+                    <img
+                      width="300"
+                      height="169"
+                      src="assets/flower.png"
+                      alt="flower"
+                    />
+                  </a>
+                </div>
+              </article>
+
+              <article class="listing__gallery">
+                <a class="title__gallery" href="#">
+                  TITRE IMAGE
+                  <button>Télécharger</button>
+                </a>
+                <div class="img__gallery">
+                  <a href="#">
+                    <img
+                      width="300"
+                      height="169"
+                      src="assets/bird.png"
+                      alt="bird"
+                    />
+                  </a>
+                </div>
+              </article>
+
+              <article class="listing__gallery">
+                <a class="title__gallery" href="#">
+                  TITRE IMAGE
+                  <button>Télécharger</button>
+                </a>
+                <div class="img__gallery">
+                  <a href="#">
+                    <img
+                      width="300"
+                      height="169"
+                      src="assets/cat.png"
+                      alt="cat"
+                    />
+                  </a>
+                </div>
+              </article>
+
+              <article class="listing__gallery">
+                <a class="title__gallery" href="#">
+                  TITRE IMAGE
+                  <button>Télécharger</button>
+                </a>
+                <div class="img__gallery">
+                  <a href="#">
+                    <img
+                      width="300"
+                      height="169"
+                      src="assets/car.png"
+                      alt="car"
+                    />
+                  </a>
+                </div>
+              </article>
+
+              <article class="listing__gallery">
+                <a class="title__gallery" href="#">
+                  TITRE IMAGE
+                  <button>Télécharger</button>
+                </a>
+                <div class="img__gallery">
+                  <a href="#">
+                    <img
+                      width="300"
+                      height="169"
+                      src="assets/bottle.png"
+                      alt="bottle"
+                    />
+                  </a>
+                </div>
+              </article>
+              <article class="listing__gallery">
+                <a class="title__gallery" href="#">
+                  TITRE IMAGE
+                  <button>Télécharger</button>
+                </a>
+                <div class="img__gallery">
+                  <a href="#">
+                    <img
+                      width="300"
+                      height="169"
+                      src="assets/forest.png"
+                      alt="forest"
+                    />
+                  </a>
+                </div>
+              </article>
+              <article class="listing__gallery">
+                <a class="title__gallery" href="#">
+                  TITRE IMAGE
+                  <button>Télécharger</button>
+                </a>
+                <div class="img__gallery">
+                  <a href="#">
+                    <img
+                      width="300"
+                      height="169"
+                      src="assets/river.png"
+                      alt="river"
+                    />
+                  </a>
+                </div>
+              </article>
+              <article class="listing__gallery">
+                <a class="title__gallery" href="#">
+                  TITRE IMAGE
+                  <button>Télécharger</button>
+                </a>
+                <div class="img__gallery">
+                  <a href="#">
+                    <img
+                      width="300"
+                      height="169"
+                      src="assets/beach.png"
+                      alt="beach"
+                    />
+                  </a>
+                </div>
+              </article>
             </div>
           </div>
+          <article class="caroussel">
+            <div class="title__caroussel">
+              <div class="bar__caroussel"></div>
+              <h2>LOREM IPSUM</h2>
+            </div>
+            <div class="single-item">
+              <div>
+                <svg
+                  width="145"
+                  height="98"
+                  viewBox="0 0 145 98"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M145 97.9999H139C139 76.1999 121.3 58.2999 99.3 58.2999V52.2999C124.5 52.2999 145 72.7999 145 97.9999Z"
+                    fill="#3FBCEF"
+                  />
+                  <path
+                    d="M132.9 98H126.9C126.9 82.9 114.6 70.6 99.5 70.6V64.6C117.8 64.3 132.9 79.4 132.9 98Z"
+                    fill="#3FBCEF"
+                  />
+                  <path
+                    d="M120.6 98H114.6C114.6 89.5 107.8 82.7 99.3 82.7V76.7C111.2 76.6 120.6 86.1 120.6 98Z"
+                    fill="#3FBCEF"
+                  />
+                  <path
+                    d="M90.2 49.2C86.8 49.2 82.3 49.6 78.9 53.2L73.7 58.4H62.4L78.1 39.5L77.5 38C74.3 28.3 62.8 16.5 50.7 10.4C50.1 8.79997 48.5 6.39998 44.9 3.39998C40.3 -1.00002 32.2 -1.00002 27.8 3.39998L14.9 16.2C10.1 21 11.5 29.1 15.5 35.3L0 47.8L1 50C8.5 65.9 24.4 81.6 37 85.8L39 86.4L47.3 76.5H73.7L78.9 81.7C81.5 84.3 85.3 85.7 90.2 85.7H93.2V49.2H90.2ZM19.1 20.2L32 7.39998C34 5.39998 38.4 5.39998 40.9 7.59998C42.3 8.79998 43.5 10.2 44.3 11.2L19.9 31.3C17.7 27.3 16.7 22.7 19.1 20.2ZM87.2 79.4C85.6 79 84.2 78.4 83.2 77.6L76.2 70.6H44.5L37 79.5C26.8 75 14.3 62.3 7.7 49.4L48.4 15.6C58.1 20.6 67.9 30.5 71.2 38.2L49.3 64.3H76.1L83.1 57.3C84.1 56.3 85.3 55.7 87.1 55.3V79.4H87.2Z"
+                    fill="#3FBCEF"
+                  />
+                </svg>
+                <h2>Lorem ipsum dolor sit amet</h2>
+                <p>
+                  Sed dapibus hendrerit lacus at interdum. Mauris aliquet augue
+                  a luctus ullamcorper. Suspendisse potenti. Suspendisse potenti
+                </p>
+                <button>Accéder au site</button>
+              </div>
+              <div>Caroussel2</div>
+              <div>Caroussel3</div>
+            </div>
+          </article>
+          <footer>
+            <div class="text__footer">
+              Suspendisse consectetur libero ante, eu lobortis justo rutrum non.
+              Vestibulum tempor molestie leo, nec semper risus pellentesque sed.
+            </div>
+              <ul class="link__footer">
+                <li>item link</li>
+                <li>item link</li>
+                <li>item link</li>
+                <li>item link</li>
+                <li>item link</li>
+              </ul>
+              <ul class="link__footer">
+                <li>item link</li>
+                <li>item link</li>
+                <li>item link</li>
+                <li>item link</li>
+              </ul>
+            </div>
+          </footer>
         </div>
-
-        <div class="site-cache" id="site-cache"></div>
       </div>
     </div>
     <script type="text/javascript" src="script.js"></script>

@@ -14,14 +14,6 @@ a {
   overflow: hidden;
 }
 
-.header {
-  position: fixed;
-  left: 0;
-  right: 0;
-  height: 66px;
-  line-height: 66px;
-}
-
 .header__icon {
   display: none;
 }
@@ -31,24 +23,14 @@ a {
 }
 
 .menu {
-  text-align: center;
   margin-top: 155px;
 }
 
-.menu::after {
-  position: absolute;
-  content: "";
-  height: 2px;
-  background-color: #242424;
-  width: 50%;
-  margin-left: 15px;
-  top: 50%;
-}
-
 .menu a {
-  font-weight: 700; 
+  margin: 66px;
+  font-weight: 700;
   font-size: 15px;
-  margin: 67px;
+  text-align: center;
 }
 
 .header__logo {
@@ -81,6 +63,21 @@ a {
   fill: #000000;
 }
 
+.blue__bar {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(196, 196, 196, 0) 0%,
+    rgba(63, 188, 239, 0.5) 5.73%,
+    rgba(63, 163, 239, 0.5) 94.27%,
+    rgba(196, 196, 196, 0) 100%
+  );
+  height: 1px;
+  width: 915px;
+  margin: auto;
+  border-radius: 3px;
+  margin-top: 30px;
+}
+
 .background__polygon {
   z-index: -9;
   position: fixed;
@@ -89,7 +86,153 @@ a {
 }
 
 .home__title {
+  margin-top: 230px;
+  margin-left: 246px;
+}
 
+.home__title h1 {
+  font-size: 20px;
+  color: rgba(63, 188, 239, 1);
+}
+
+.home__title h2 {
+  font-size: 70px;
+  line-height: 70px;
+  margin-top: 20px;
+  width: 560px;
+  font-weight: 700;
+}
+
+.home__title button {
+  border: 1px solid #3fbcef;
+  box-sizing: border-box;
+  border-radius: 50px;
+  background-color: white;
+  color: rgba(63, 188, 239, 1);
+  height: 33px;
+  width: 113px;
+  margin-bottom: 255px;
+}
+
+.grid__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+a img {
+  width: 100%;
+  height: auto;
+}
+
+.listing__gallery {
+  position: relative;
+}
+
+.listing__gallery button {
+  width: 113px;
+  height: 33px;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 50px;
+  font-size: 14px;
+  background: none;
+  color: white;
+  margin-top: 10px;
+}
+
+.title__gallery {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(88, 84, 91, 0.8);
+  color: white;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.img__gallery {
+  line-height: 0;
+}
+
+.listing__gallery:hover .title__gallery {
+  opacity: 1;
+}
+
+.caroussel {
+  background-color: rgba(88, 84, 91, 1);
+  color: white;
+  justify-content: center;
+  text-align: center;
+}
+
+.title__caroussel {
+  margin-left: 150px;
+  display: flex;
+}
+
+.bar__caroussel {
+  height: 3px;
+  width: 44px;
+  left: 0px;
+  border-radius: 0px;
+  background: white;
+  margin-top: 81px;
+  margin-right: 10px;
+}
+
+.title__caroussel h2 {
+  margin-top: 60px;
+}
+
+.single-item h2 {
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 63px;
+}
+
+.single-item p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.single-item button {
+  width: 155px;
+  height: 33px;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 50px;
+  font-size: 14px;
+  background-color: rgba(88, 84, 91, 1);
+  color: white;
+} 
+
+footer {
+  display: flex;
+  margin-top: 70px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.text__footer {
+  margin-left: 150px;
+  width: 177px;
+  line-height: 15px;
+  margin-bottom: 100px;
+}
+
+footer ul {
+  margin-block-start: 0px;
+  list-style-type: none;
+  margin-block-end: auto;
+  margin-left: 112px;
 }
 
 @media only screen and (max-device-width: 450px) {
@@ -98,15 +241,13 @@ a {
     height: 100%;
   }
   .site__container {
+    overflow-y: scroll !important;
+    -webkit-overflow-scrolling: touch;
     overflow: hidden;
   }
   .site__pusher {
     transition-duration: 0.3s;
     transform: translateX(0px);
-  }
-  
-  .header {
-    position: static;
   }
 
   .header__icon {
@@ -188,12 +329,14 @@ a {
     transform: translateX(-100%);
   }
 
-  .with--sidebar .site-cache {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.6);
+  .text__footer {
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .link__footer {
+    display: none;
   }
 }
